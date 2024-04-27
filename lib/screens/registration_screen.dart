@@ -39,12 +39,14 @@ class _LoginScreenState extends State<RegistrationScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Hero(
-                      tag: 'Bolt',
-                      child: Icon(
-                        Icons.bolt,
-                        size: 200.0,
-                        color: Colors.amber,
+                    Flexible(
+                      child: Hero(
+                        tag: 'Bolt',
+                        child: Icon(
+                          Icons.bolt,
+                          size: 200.0,
+                          color: Colors.amber,
+                        ),
                       ),
                     ),
                   ],
@@ -124,7 +126,7 @@ class _LoginScreenState extends State<RegistrationScreen> {
                                 email: _emailController.text,
                                 password: _passwordController.text);
                         Navigator.pushNamed(context, '/third');
-                                              setState(() {
+                        setState(() {
                           showSpinner = false;
                         });
                       } catch (e) {

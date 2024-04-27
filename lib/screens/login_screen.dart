@@ -40,12 +40,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Hero(
-                        tag: 'Bolt',
-                        child: Icon(
-                          Icons.bolt,
-                          size: 200.0,
-                          color: Colors.amber,
+                      Flexible(
+                        child: Hero(
+                          tag: 'Bolt',
+                          child: Icon(
+                            Icons.bolt,
+                            size: 200.0,
+                            color: Colors.amber,
+                          ),
                         ),
                       ),
                     ],
